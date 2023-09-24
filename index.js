@@ -8,6 +8,10 @@ const news = require("./data/news.json");
 
 app.use(cors());
 
+app.get('/', (req, res) =>{
+  res.send('The World News in Running')
+})
+
 app.get("/categories", (req, res) => {
   res.send(categories);
 });
